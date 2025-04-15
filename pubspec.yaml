@@ -1,7 +1,7 @@
 name: custom_feild_box
 description: "A flutter plugin for custom feild box"
-version: 0.0.1
-homepage:
+version: 0.0.2
+homepage: https://github.com/rushikeshdhumane/custom_feild_box.git
 
 environment:
   sdk: ^3.5.0
