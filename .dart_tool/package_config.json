@@ -80,6 +80,12 @@
       "languageVersion": "3.1"
     },
     {
+      "name": "loading_indicator",
+      "rootUri": "file:///home/rushikesh/.pub-cache/hosted/pub.dev/loading_indicator-3.1.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "matcher",
       "rootUri": "file:///home/rushikesh/.pub-cache/hosted/pub.dev/matcher-0.12.16+1",
       "packageUri": "lib/",
@@ -164,7 +170,7 @@
       "languageVersion": "3.5"
     }
   ],
-  "generated": "2025-04-14T14:59:50.169157Z",
+  "generated": "2025-04-16T04:58:45.181314Z",
   "generator": "pub",
   "generatorVersion": "3.5.0",
   "flutterRoot": "file:///opt/flutter",

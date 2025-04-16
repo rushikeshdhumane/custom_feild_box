@@ -92,6 +92,31 @@ class _MyHomePageState extends State<MyHomePage> {
                   },
                 ),
 
+                Padding(
+                  padding: const EdgeInsets.only(top:14.0),
+                  child: CustomButton(
+                    onPressed: () {
+                      // print("Button Pressed");
+                    },
+                    buttonTextValue: "Submit",
+                    isButtonDisabled: false,
+                    buttonTextFont: 'NunitoSansRegular',
+                  ),
+                ),
+
+                const Padding(
+                  padding: EdgeInsets.only(top: 14.0),
+                  child: CustomText(
+                      text: 'Rushi',
+                     textAlign: TextAlign.left,
+                  ),
+                ),
+
+                const Padding(
+                  padding: EdgeInsets.only(top: 14.0),
+                  child: CustomLoader(),
+                ),
+
               ],
             ),
           ),
