@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'security.dart';
 
 class CustomButton extends StatefulWidget {
   final Function? onPressed;
@@ -21,6 +22,12 @@ class CustomButton extends StatefulWidget {
 class _CustomButtonState extends State<CustomButton> {
   @override
   Widget build(BuildContext context) {
+    if (!CustomFieldBoxSecurity.isValid) {
+      return const Text(
+        'Invalid or missing security key',
+        style: TextStyle(color: Colors.red),
+      );
+    }
     return Opacity(
       opacity: widget.isButtonDisabled ? 0.6 : 1.0, // Reduce opacity when button is disabled
       child: InkWell(

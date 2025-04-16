@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'security.dart';
 
 class CustomFieldBox extends StatelessWidget {
   final String? label;
@@ -45,6 +46,12 @@ class CustomFieldBox extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!CustomFieldBoxSecurity.isValid) {
+      return const Text(
+        'Invalid or missing security key',
+        style: TextStyle(color: Colors.red),
+      );
+    }
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [

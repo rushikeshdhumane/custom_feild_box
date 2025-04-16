@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'security.dart';
 
 class CustomTextBold extends StatelessWidget {
   final String text;
@@ -58,6 +59,12 @@ class CustomText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    if (!CustomFieldBoxSecurity.isValid) {
+      return const Text(
+        'Invalid or missing security key',
+        style: TextStyle(color: Colors.red),
+      );
+    }
     return Text(
       text,
       textAlign: textAlign ?? TextAlign.start,
